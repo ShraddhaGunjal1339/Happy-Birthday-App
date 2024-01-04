@@ -40,10 +40,15 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun GreetingText(message: String, modifier: Modifier = Modifier) {
+fun GreetingText(message: String,from : String , modifier: Modifier = Modifier) {
     Text(
         text = message,
         fontSize = 100.sp,
+        lineHeight = 116.sp
+    )
+    Text(
+        text = from,
+        fontSize = 20.sp,
         lineHeight = 116.sp
     )
 }
@@ -52,7 +57,7 @@ fun GreetingText(message: String, modifier: Modifier = Modifier) {
 @Composable
 fun HappyBirthdayPreview() {
     HappyBirthdayTheme {
-        GreetingText("Happy Birthday samrth !")
+        GreetingText("Happy Birthday samrth !" ,"From your Sister Shraddha")
         //Greeting("Samrth Arvind gunjal")
 
     }

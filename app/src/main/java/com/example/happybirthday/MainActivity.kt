@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -64,8 +65,9 @@ fun GreetingText(message: String,from : String , modifier: Modifier = Modifier) 
 //    }
     Column (
         verticalArrangement = Arrangement.Center,
-        modifier = modifier.padding(8.dp)
-    ) {
+        modifier = modifier.fillMaxHeight()//IMP
+    )
+    {
             Text(
                 text = message,
                 fontSize = 100.sp,
@@ -90,7 +92,7 @@ fun GreetingText(message: String,from : String , modifier: Modifier = Modifier) 
 @Composable
 fun HappyBirthdayPreview() {
     HappyBirthdayTheme {
-        GreetingText("Happy Birthday Sakshi !" ,"From your Sister Shraddha")
+        GreetingText("Happy Birthday Samrth !" ,"From your Sister Shraddha")
         //Greeting("Samrth Arvind gunjal")
 
     }

@@ -51,18 +51,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun GreetingText(message: String,from : String , modifier: Modifier = Modifier) {
-//    Row {
-//        Text(
-//            text = message,
-//            fontSize = 20.sp,
-//            lineHeight = 11.sp
-//        )
-//        Text(
-//            text = from,
-//            fontSize = 20.sp,
-//            lineHeight = 21.sp
-//        )
-//    }
+
     Column (
         verticalArrangement = Arrangement.Center,
         modifier = modifier.fillMaxHeight()//IMP
